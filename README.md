@@ -2,137 +2,56 @@
 
 > *Arte Ancestral. Tecnologia Digital. Do Grajaú para o mundo.*
 
-Retrato digital interativo de **Marcos Paulo Figueroa** (Marentropico) — artista multimídia, produtor audiovisual e fundador da [Umimbae](https://umimbae.com.br).
+**Live:** [marentropico.github.io/retrato-digital](https://marentropico.github.io/retrato-digital)
 
-## 🎯 Sobre o Projeto
+Retrato digital interativo de **Marcos Paulo Figueroa** — artista multimídia, produtor audiovisual, músico, designer, desenvolvedor e fundador da [Umimbae](https://umimbae.com.br). Uma experiência de usuário que documenta uma jornada humana e criativa do Grajaú, São Paulo, para o mundo.
 
-Este não é um currículo, nem um portfólio clássico. É um **retrato digital**: uma experiência de usuário que oferece uma visão clara e imersiva da identidade, jornada, valores e visão de mundo de Marentropico — para educadores, fãs ou empresas que queiram se conectar de verdade.
+## Sobre
 
-## ✨ Funcionalidades
+Este projeto não é um currículo, nem um portfólio convencional. É um **retrato digital**: uma narrativa interativa construída para educadores, parceiros, fãs e empresas que queiram compreender quem é Marentropico — sua trajetória, seus valores, sua visão de mundo e seus trabalhos — de forma imersiva e direta.
 
-- **Landing page** com hero animado e identidade forte
-- **Linha do tempo interativa** — navega por eras: Origem → Presente → Horizonte Futuro
-- **Marcos de mídia integrados**:
-  - 🎬 Vídeos do YouTube (embed + player em lightbox)
-  - 🎵 Músicas do Spotify (embed nativo)
-  - 📸 Galerias de fotos
-  - 📌 Marcos textuais
-- Cursor customizado
-- Scroll reveal animations
-- Barra de progresso de leitura
-- 100% responsivo
-- Navegação por teclado (← →)
+A jornada é navegada através de uma linha do tempo dividida em eras, cada uma com marcos que podem conter vídeos, músicas, fotos e registros textuais de momentos reais.
 
-## 📁 Estrutura
+## Tecnologias
+
+Construído inteiramente com HTML, CSS e JavaScript puros — sem frameworks, sem dependências externas. Todos os dados da jornada são carregados a partir de um único arquivo JSON, mantendo o projeto leve, rápido e de fácil manutenção.
+
+## Estrutura
 
 ```
 /
-├── index.html              # Página principal
+├── index.html          — Página principal
 ├── css/
-│   ├── main.css            # Design system e hero
-│   ├── timeline.css        # Timeline interativa
-│   └── media.css           # Embeds, lightbox, extras
+│   ├── main.css        — Design system, hero, seção about
+│   ├── timeline.css    — Timeline interativa e cards de marcos
+│   └── media.css       — Embeds de mídia, lightbox, manifesto, footer
 ├── js/
-│   ├── main.js             # Cursor, scroll, nav, loader
-│   └── timeline.js         # Engine da timeline
+│   ├── main.js         — Cursor, scroll, navegação, loader
+│   ├── media-embed.js  — Módulo de embeds: YouTube, Spotify, fotos
+│   └── timeline.js     — Engine da timeline, renderização e interação
 ├── assets/
-│   ├── fonts/              # Fontes locais (opcional)
-│   └── images/             # Imagens do projeto
-├── data/
-│   └── timeline.json       # ⭐ EDITE AQUI — conteúdo da jornada
-└── README.md
+│   ├── fonts/
+│   └── images/
+└── data/
+    └── timeline.json   — Conteúdo completo da jornada
 ```
 
-## 🛠️ Como personalizar
+## Design
 
-### Adicionar marcos na timeline
+A identidade visual é inspirada na estética da [Umimbae](https://umimbae.com.br) — fusão entre referências orgânicas e tecnologia digital. Paleta construída sobre tons de terra, verde e ouro sobre fundo quase-preto, com tipografia *Playfair Display* em itálico para os títulos e *Space Mono* para os elementos técnicos.
 
-Edite `data/timeline.json`. Cada era tem um array `milestones`:
-
-```json
-{
-  "id": "meu-marco",
-  "type": "youtube",
-  "title": "Nome do trabalho",
-  "description": "Descrição do projeto.",
-  "date": "2024",
-  "url": "https://www.youtube.com/watch?v=VIDEO_ID"
-}
-```
-
-**Tipos de marco disponíveis:**
-
-| type | Uso |
-|------|-----|
-| `youtube` | Vídeo do YouTube — coloca thumbnail + player |
-| `spotify` | Track, álbum ou playlist do Spotify |
-| `photo` | Galeria de fotos (array `photos: ["url1", "url2"]`) |
-| `text` | Marco textual puro |
-| `milestone` | Evento/conquista sem mídia |
-
-### Exemplo de marco Spotify
-
-```json
-{
-  "type": "spotify",
-  "title": "Nome da faixa",
-  "description": "Produção do zero no home studio.",
-  "date": "2023",
-  "url": "https://open.spotify.com/track/ID_DA_FAIXA"
-}
-```
-
-### Exemplo de galeria de fotos
-
-```json
-{
-  "type": "photo",
-  "title": "Bastidores do estúdio",
-  "description": "Gravação do projeto X.",
-  "date": "2024",
-  "photos": [
-    "assets/images/foto1.jpg",
-    "assets/images/foto2.jpg"
-  ]
-}
-```
-
-## 🚀 Deploy no GitHub Pages
-
-```bash
-# 1. Inicializar repositório
-git init
-git add .
-git commit -m "feat: retrato digital marentropico"
-
-# 2. Criar repositório no GitHub e conectar
-git remote add origin https://github.com/SEU_USUARIO/marentropico.git
-git push -u origin main
-
-# 3. Ativar GitHub Pages
-# Settings → Pages → Source: Deploy from branch → main → / (root)
-```
-
-O site estará disponível em: `https://SEU_USUARIO.github.io/marentropico`
-
-> **Nota:** Os embeds do YouTube e Spotify funcionam perfeitamente no GitHub Pages pois são iframes externos.
-
-## 🎨 Paleta
-
-| Token | Cor | Uso |
-|-------|-----|-----|
+| Token | Valor | Uso |
+|-------|-------|-----|
 | `--c-terra` | `#C4622D` | Destaque principal |
 | `--c-verde` | `#2C7873` | Destaque secundário |
-| `--c-ouro` | `#D4A042` | Hover / acento |
-| `--c-bg` | `#0D0D0B` | Fundo |
-| `--c-text` | `#EDE8DC` | Texto principal |
+| `--c-ouro`  | `#D4A042` | Acento e hover |
+| `--c-bg`    | `#0D0D0B` | Fundo |
+| `--c-text`  | `#EDE8DC` | Texto principal |
 
-## 🔗 Links
+## Links
 
-- [Umimbae](https://umimbae.com.br) — Produtora Audiovisual
-- [Perfil Marcos](https://umimbae.com.br/marcos.php)
+- [Umimbae](https://umimbae.com.br) — Produtora Audiovisual & Tech
 
 ---
 
-*Designed & Built by Marcos Paulo Figueroa (Marentropico) · © 2026*
-#retrato-digital
+© 2026 Marcos Paulo Figueroa · Designed & Built by Marentropico
