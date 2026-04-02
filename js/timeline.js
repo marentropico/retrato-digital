@@ -71,6 +71,22 @@ class Timeline {
             ${this.renderMilestones(era)}
           </div>
         </div>
+        ${i < this.eras.length - 1 ? `
+          <div class="era-next-wrap">
+            <button class="era-next-btn" data-next="${i + 1}" aria-label="Próxima era: ${this.eras[i + 1].label}">
+              <span class="era-next-label">Próximo Marco</span>
+              <span class="era-next-name">${this.eras[i + 1].icon} ${this.eras[i + 1].label}</span>
+              <svg class="era-next-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        ` : `
+          <div class="era-next-wrap">
+            <button class="era-next-btn era-next-btn--end" data-next="0" aria-label="Voltar ao início da jornada">
+              <span class="era-next-label">Fim da Jornada</span>
+              <span class="era-next-name">↑ Voltar ao início</span>
+            </button>
+          </div>
+        `}
       `;
 
       panel.querySelectorAll('.era-dot').forEach(dot => {
@@ -83,6 +99,22 @@ class Timeline {
           }
         });
       });
+
+      // Próximo Marco button
+      const nextBtn = panel.querySelector('.era-next-btn');
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          const next = parseInt(nextBtn.dataset.next);
+          this.activateEra(next);
+          // Scroll so the top of #era-nav aligns with the top of the viewport
+          const eraNav = document.getElementById('era-nav');
+          if (eraNav) {
+            const navHeight = document.querySelector('.nav')?.offsetHeight || 0;
+            const top = eraNav.getBoundingClientRect().top + window.scrollY - navHeight;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        });
+      }
 
       stage.appendChild(panel);
     });
@@ -133,9 +165,16 @@ class Timeline {
       tab.setAttribute('aria-selected', active ? 'true' : 'false');
     });
 
-    // Scroll active tab into view on mobile
+    // Scroll active tab into view horizontally — só mexe o nav, nunca a página
     const activeTab = document.querySelector(`.era-tab[data-era="${index}"]`);
-    activeTab?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    const nav = document.getElementById('era-nav');
+    if (activeTab && nav) {
+      const tabLeft   = activeTab.offsetLeft;
+      const tabWidth  = activeTab.offsetWidth;
+      const navWidth  = nav.offsetWidth;
+      const scrollTo  = tabLeft - (navWidth / 2) + (tabWidth / 2);
+      nav.scrollTo({ left: scrollTo, behavior: 'smooth' });
+    }
 
     document.querySelectorAll('.era-panel').forEach((panel, i) => {
       const active = i === index;

@@ -349,6 +349,82 @@
   margin-bottom: var(--space-sm);
 }
 
+/* ============ PRÓXIMO MARCO BUTTON ============ */
+.era-next-wrap {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+}
+
+.era-next-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  padding: var(--space-md) var(--space-xl);
+  cursor: none;
+  transition: border-color 0.25s, background 0.25s, transform 0.25s var(--ease-out);
+  min-width: 200px;
+}
+
+.era-next-btn:hover {
+  border-color: var(--c-terra);
+  background: rgba(196, 98, 45, 0.06);
+  transform: translateX(3px); /* desloca para a direita — reforça que é um avanço no tempo */
+}
+
+.era-next-btn--end:hover {
+  border-color: var(--c-verde);
+  background: rgba(44, 120, 115, 0.06);
+  transform: translateX(-3px); /* desloca para a esquerda — reforça que vai voltar ao topo */
+}
+
+.era-next-label {
+  font-family: var(--f-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c-text-dim);
+}
+
+.era-next-name {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--c-text-muted);
+  transition: color 0.2s;
+}
+
+.era-next-btn:hover .era-next-name { color: var(--c-terra); }
+.era-next-btn--end:hover .era-next-name { color: var(--c-verde); }
+
+.era-next-arrow {
+  width: 18px;
+  height: 18px;
+  stroke: var(--c-text-dim);
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.2s, transform 0.3s var(--ease-out);
+  animation: arrowBounce 2s ease-in-out infinite;
+}
+
+.era-next-btn:hover .era-next-arrow {
+  stroke: var(--c-terra);
+  animation: none;
+  transform: translateX(5px);
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(4px); }
+}
+
 /* ============ FUTURE HORIZON ============ */
 .horizon-card {
   background: linear-gradient(135deg, var(--c-surface) 0%, rgba(107, 63, 160, 0.05) 100%);
