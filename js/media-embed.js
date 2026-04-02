@@ -87,6 +87,22 @@ const MediaEmbed = (() => {
       </div>`;
   }
 
+  // ============ SOUNDCLOUD ============
+
+function buildSoundCloudEmbed(url) {
+  if (!url) return '';
+  const encoded = encodeURIComponent(url);
+  return `
+    <div class="milestone-media soundcloud-embed">
+      <iframe
+        src="https://w.soundcloud.com/player/?url=${encoded}&color=%23C4622D&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
+        allow="autoplay"
+        loading="lazy"
+        title="SoundCloud player"
+      ></iframe>
+    </div>`;
+}
+
   // ============ PHOTO GALLERY ============
 
   function buildPhotoGallery(photos, title) {
@@ -112,6 +128,8 @@ const MediaEmbed = (() => {
       }
       case 'spotify':
         return buildSpotifyEmbed(url);
+      case 'soundcloud':
+        return buildSoundCloudEmbed(url);
       case 'photo':
         return buildPhotoGallery(photos, title || '');
       default:

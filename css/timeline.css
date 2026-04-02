@@ -298,6 +298,16 @@
   height: 152px;
 }
 
+.soundcloud-embed {
+  height: 166px;
+}
+
+.soundcloud-embed iframe {
+  width: 100%;
+  height: 166px;
+  border: none;
+}
+
 /* Photo grid */
 .photo-grid {
   display: grid;

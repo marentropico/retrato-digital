@@ -134,8 +134,8 @@ class Timeline {
   }
 
   renderMilestone(m, index) {
-    const typeLabel  = { youtube: 'Vídeo', spotify: 'Música', photo: 'Foto', text: 'Marco', milestone: 'Evento' };
-    const badgeClass = { youtube: 'badge-video', spotify: 'badge-music', photo: 'badge-photo', text: 'badge-text', milestone: 'badge-milestone' };
+    const typeLabel  = { youtube: 'Vídeo', spotify: 'Música', soundcloud: 'Música', photo: 'Foto', text: 'Marco', milestone: 'Evento' };
+    const badgeClass = { youtube: 'badge-video', spotify: 'badge-music', soundcloud: 'badge-music', photo: 'badge-photo', text: 'badge-text', milestone: 'badge-milestone' };
 
     const mediaHTML = MediaEmbed.buildMediaHTML(m);
 
