@@ -337,3 +337,25 @@
   z-index: 200;
   transition: width 0.1s;
 }
+
+/* ============ RESPONSIVE (EXTRAS) ============ */
+@media (max-width: 768px) {
+  /* Centraliza e empilha os itens do rodapé */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-lg);
+  }
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Ajusta o botão "X" de fechar o vídeo no mobile */
+  .lightbox-close {
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: 36px;
+    height: 36px;
+  }
+}

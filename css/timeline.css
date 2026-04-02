@@ -468,4 +468,23 @@
 @media (max-width: 600px) {
   .era-tab-period { display: none; }
   .era-tab { min-width: 70px; }
+
+  /* Impede que o cabeçalho do card esmague os textos e tags no celular */
+  .milestone-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  /* Coloca a Tag de um lado e a Data do outro ocupando todo o topo do card */
+  .milestone-meta {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: var(--space-sm);
+  }
+
+  /* Ajusta o botão de avançar para a próxima era */
+  .era-next-btn {
+    min-width: 100%;
+  }
 }

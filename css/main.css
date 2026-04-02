@@ -558,28 +558,41 @@ section { position: relative; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
+
+  :root {
+    --space-lg: 1.25rem;  /* Reduz os respiros laterais para não "esmagar" o conteúdo */
+    --space-xl: 3rem;     /* Reduz margens grandes */
+    --space-2xl: 5rem;    /* Reduz o espaço gigante entre as seções */
+  }
+
   .about-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
-  .hero-cta { flex-direction: column; align-items: center; }
+  
+  /* Arruma os botões do topo para não ficarem "esquisitos" */
+  .hero-cta { 
+    flex-direction: column; 
+    align-items: stretch; 
+    max-width: 300px; 
+    margin: 0 auto; 
+  }
+  .hero-cta a { text-align: center; }
+  
   .cursor, .cursor-ring { display: none; }
   body { cursor: auto; }
-}
 
-#hero {
+  #hero {
     padding: var(--space-xl) var(--space-md) var(--space-md);
   }
-
   .hero-name {
-    font-size: clamp(3rem, 18vw, 5rem);
+    font-size: clamp(3rem, 15vw, 5rem);
     letter-spacing: -0.02em;
   }
-
   .hero-subtitle {
     font-size: 0.75rem;
     letter-spacing: 0.03em;
   }
-
   .hero-essence {
     font-size: 0.95rem;
   }
+}
