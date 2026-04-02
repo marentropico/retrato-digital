@@ -1,0 +1,411 @@
+{
+  "identity": {
+    "name": "Marcos Paulo Figueroa",
+    "alias": "Marentropico",
+    "tagline": "Artista multimídia, sonhador e executivo nato.",
+    "headline": "Arte Ancestral.\nTecnologia Digital.",
+    "origin": "Grajaú, São Paulo",
+    "essence": "A fome incessante de aprender e evoluir.",
+    "roles": ["Produtor Audiovisual", "Músico", "DJ", "Designer", "Desenvolvedor", "Fundador"],
+    "bio": "Nascido em 6 de fevereiro de 2000, no Grajaú. Cresceu entre DVDs de rock e um violão que não era seu — mas que tratou como se fosse desde o primeiro acorde. Aos 12 anos já estava em bandas, escrevendo músicas e vendendo doces da mãe pra pagar horas de ensaio. Aos 23, abriu o CNPJ da Umimbae. Hoje, aos 26, assina como Marentropico — produzindo, mixando, gravando, desenvolvendo, ensinando e construindo o futuro. Do Grajaú para o mundo."
+  },
+  "eras": [
+    {
+      "id": "raizes",
+      "label": "Raízes",
+      "period": "2000 – 2007",
+      "color": "#8B4513",
+      "icon": "🌱",
+      "title": "Antes do Primeiro Acorde",
+      "description": "Um domingo de fevereiro de 2000. Grajaú, São Paulo. O mundo ainda não sabia, mas nascia alguém que transformaria curiosidade em criação. Os primeiros anos foram de DVDs de rock, o som do pai preenchendo a casa — KISS, Linkin Park, Charlie Brown Jr., Nazareth, Evanescence. A semente foi plantada antes mesmo de ele saber que havia uma semente.",
+      "milestones": [
+        {
+          "id": "nascimento",
+          "type": "milestone",
+          "title": "Nasce Marcos Paulo Figueroa",
+          "description": "06 de fevereiro de 2000, um domingo. Grajaú, São Paulo. O começo de tudo.",
+          "date": "06/02/2000"
+        },
+        {
+          "id": "rock-infancia",
+          "type": "text",
+          "title": "O Som que Formou o Ouvido",
+          "description": "Dos 0 aos 7 anos, a trilha sonora da casa era o rock do pai: KISS, Charlie Brown Jr., Linkin Park, Nazareth e Evanescence. Antes de tocar uma nota, já sabia o que era uma guitarra distorcida e um refrão que arrepia.",
+          "date": "2000 – 2007"
+        },
+        {
+          "id": "primeiro-violao",
+          "type": "milestone",
+          "title": "O Primeiro Violão — e o Primeiro Silêncio",
+          "description": "Agosto de 2007. O pai ganhou um violão de aniversário. Enquanto a festa acontecia na sala, o menino de 7 anos foi pro quarto, sozinho, e ficou batendo nas cordas até cair no sono. Esse foi o momento. Não havia ninguém para ensinar — só a curiosidade e as cordas.",
+          "date": "Agosto de 2007"
+        }
+      ]
+    },
+    {
+      "id": "despertar",
+      "label": "Despertar",
+      "period": "2007 – 2012",
+      "color": "#C4622D",
+      "icon": "🎸",
+      "title": "Guitarras e Desenhos",
+      "description": "A escola trouxe o primeiro amigo que também tocava. O Natal trouxe as primeiras guitarras. Entre os 7 e os 12 anos, dois mundos cresciam em paralelo: a música e o desenho. A criatividade buscava qualquer saída que encontrasse.",
+      "milestones": [
+        {
+          "id": "primeiro-amigo-musico",
+          "type": "text",
+          "title": "O Primeiro Parceiro de Palco",
+          "description": "Na escola, conheceu seu primeiro amigo que também tocava violão. Anos depois, ganharam juntos suas primeiras guitarras no Natal. O que começou como brincadeira virou comprometimento.",
+          "date": "2008 – 2010"
+        },
+        {
+          "id": "desenho",
+          "type": "text",
+          "title": "A Fase do Desenho",
+          "description": "Dos 7 aos 12 anos, o desenho era uma segunda língua. Linhas, formas, personagens — a habilidade visual que anos depois se tornaria design gráfico, motion, identidade visual e capas de álbum.",
+          "date": "2007 – 2012"
+        },
+        {
+          "id": "primeira-banda",
+          "type": "milestone",
+          "title": "Primeira Banda, Primeiras Músicas Autorais",
+          "description": "Aos 12 anos, já fazia parte de bandas de rock para shows de talentos na escola — e já escrevia músicas próprias. A decisão estava tomada: teria uma carreira artística.",
+          "date": "2012"
+        }
+      ]
+    },
+    {
+      "id": "batalha",
+      "label": "Batalha",
+      "period": "2012 – 2015",
+      "color": "#D4812A",
+      "icon": "🏆",
+      "title": "Três Anos, Três Medalhas",
+      "description": "Entre 12 e 15 anos, competiu três vezes no show de talentos da escola. 3° lugar. 2° lugar. 1° lugar. Cada troféu custou horas de ensaio pagas com os doces da mãe confeiteira. A decisão de ter uma carreira artística deixou de ser sonho e virou plano.",
+      "milestones": [
+        {
+          "id": "medal-3",
+          "type": "milestone",
+          "title": "3° Lugar — Show de Talentos",
+          "description": "Primeira competição com a banda. Terceiro lugar. A estreia no palco competitivo — e a certeza de que havia mais a conquistar.",
+          "date": "2012"
+        },
+        {
+          "id": "medal-2",
+          "type": "milestone",
+          "title": "2° Lugar — Show de Talentos",
+          "description": "Segundo ano, segundo lugar. A evolução era evidente. O grupo voltaria.",
+          "date": "2013"
+        },
+        {
+          "id": "medal-1",
+          "type": "milestone",
+          "title": "🥇 1° Lugar — Show de Talentos",
+          "description": "Terceiro ano, primeiro lugar. Horas de ensaio em estúdio pagos com os doces da mãe confeiteira. O resultado estava à altura do sacrifício. Aqui ficou claro: a carreira artística não era uma opção — era uma certeza.",
+          "date": "2014"
+        },
+        {
+          "id": "doces-mae",
+          "type": "text",
+          "title": "Vendendo Doces pra Pagar o Estúdio",
+          "description": "Para bancar as horas de ensaio em estúdios da região com a banda, vendia os doces da mãe — confeiteira de mão cheia. Primeira lição de empreendedorismo: se o recurso não existe, você o cria.",
+          "date": "2012 – 2015"
+        }
+      ]
+    },
+    {
+      "id": "mundo-real",
+      "label": "Mundo Real",
+      "period": "2015 – 2018",
+      "color": "#2C7873",
+      "icon": "⚙️",
+      "title": "O Mercado e a Primeira Empresa",
+      "description": "Entre 15 e 18 anos, o mundo real bateu na porta. Vendas, lava-rápido, bicos, estágio no Tribunal de Justiça de SP. Em paralelo, organizava festas de música eletrônica com os amigos — e começava a vislumbrar o DJ e a produtora que ainda não existiam, mas que já tinham nome: Bonjour Records.",
+      "milestones": [
+        {
+          "id": "tj-sp",
+          "type": "milestone",
+          "title": "Jovem Aprendiz — Tribunal de Justiça de SP",
+          "description": "Um ano como jovem aprendiz no TJSP. Primeira imersão profunda em administração, processos e responsabilidade institucional. O artista aprendeu a pensar como gestor.",
+          "date": "2016 – 2017"
+        },
+        {
+          "id": "festas-eletronicas",
+          "type": "text",
+          "title": "Promovendo Festas de Música Eletrônica",
+          "description": "Com os amigos da escola, organizavam festas de música eletrônica — com bilheteria e lucro real. Ainda não era DJ, mas já enxergava o ecossistema: logística, produção, público, som. O embrião da produtora estava tomando forma.",
+          "date": "2015 – 2018"
+        },
+        {
+          "id": "bonjour-records",
+          "type": "milestone",
+          "title": "Nasce a Bonjour Records",
+          "description": "A ideia de ter a própria produtora musical e cultural ganhou nome: Bonjour Records. Ainda era um projeto, uma visão — mas a semente da Umimbae estava plantada.",
+          "date": "2017 – 2018"
+        },
+        {
+          "id": "astral-projection",
+          "type": "spotify",
+          "title": "Primeira Música Lançada — 'Astral Projection'",
+          "description": "Ainda no período escolar, estudou produção musical pelo YouTube e lançou sua primeira música — uma colaboração com a namorada da época. O primeiro fonograma de uma discografia que estava começando.",
+          "date": "2018",
+          "url": "https://open.spotify.com/intl-pt/track/1GhizEbqTx0E2GuB1N7wbK?si=f6ac31f6698f4240"
+        }
+      ]
+    },
+    {
+      "id": "faculdade",
+      "label": "Faculdade",
+      "period": "2018 – 2022",
+      "color": "#1A5276",
+      "icon": "🎓",
+      "title": "ProUni, DJ e a Câmera",
+      "description": "Bolsista 100% pelo ProUni na Anhembi Morumbi — Produção Fonográfica. O projeto DJ Wölfig, o primeiro bootleg, a primeira câmera DSLR, cursos de design e motion, a clínica veterinária, e o nascimento da Grajah Roots. A faculdade foi um laboratório total.",
+      "milestones": [
+        {
+          "id": "prounni",
+          "type": "milestone",
+          "title": "Bolsista 100% ProUni — Produção Fonográfica",
+          "description": "Estudou, passou e conquistou uma bolsa integral pelo ProUni para cursar Produção Fonográfica na Anhembi Morumbi. Prova de que preparação e determinação abrem portas — mesmo quando o recurso financeiro não está disponível.",
+          "date": "2018"
+        },
+        {
+          "id": "wolfig-dj",
+          "type": "milestone",
+          "title": "Nasce o DJ Wölfig",
+          "description": "Na faculdade se tornou DJ. O projeto Wölfig tocou em festas de aniversário e lounges — a música eletrônica saiu do papel e chegou às caixas de som.",
+          "date": "2019 – 2021"
+        },
+        {
+          "id": "clinica-design",
+          "type": "text",
+          "title": "Design, Motion e a Primeira Câmera DSLR",
+          "description": "Trabalhou em uma clínica veterinária e usou o emprego como laboratório: fazia as postagens e fotografias para as redes sociais. Completou o curso 'Me Ensina AE' da Brainstorm Academy em After Effects. Comprou a primeira câmera DSLR e mergulhou na fotografia.",
+          "date": "2019 – 2021"
+        },
+        {
+          "id": "grajah-roots",
+          "type": "milestone",
+          "title": "Nasce a Grajah Roots",
+          "description": "Criou a banda de reggae Grajah Roots com amigos músicos do bairro. O Grajaú cantado em reggae — raiz, identidade, pertencimento. A banda que anos depois ganharia um videoclipe produzido e gravado por ele mesmo.",
+          "date": "2020"
+        }
+      ]
+    },
+    {
+      "id": "umimbae",
+      "label": "Umimbae",
+      "period": "2022 – 2023",
+      "color": "#1E8449",
+      "icon": "🌊",
+      "title": "Bonjour vira Umimbae",
+      "description": "O projeto amadureceu. A Bonjour Records evoluiu para a Umimbae — um nome que nasceu de uma reconexão com as raízes, com a ancestralidade, com a família. Em 2023, o CNPJ foi aberto. Aos 23 anos, a primeira empresa.",
+      "milestones": [
+        {
+          "id": "umimbae-nome",
+          "type": "milestone",
+          "title": "Bonjour Records → Umimbae",
+          "description": "O antigo projeto ganhou nome novo e alma nova. Umimbae nasceu de uma reconexão com as raízes — um entendimento mais profundo do que significa identidade cultural e a valorização da ancestralidade mais próxima: família e avós.",
+          "date": "2022"
+        },
+        {
+          "id": "ratos-ltda-spotify",
+          "type": "spotify",
+          "title": "Produção: 'Ratos LTDA' — Grajah Roots",
+          "description": "Produziu, mixou e masterizou o primeiro trabalho fonográfico da Grajah Roots. Do beat ao mastering — tudo feito por ele.",
+          "date": "2023",
+          "url": "https://open.spotify.com/intl-pt/track/4JymcycDgGWFc21hQTGU1m?si=51b4e68701834c72"
+        },
+        {
+          "id": "ratos-ltda-video",
+          "type": "youtube",
+          "title": "Videoclipe: 'Ratos LTDA' — Grajah Roots",
+          "description": "Gravou e editou o videoclipe oficial da Grajah Roots. Produtor musical, diretor e editor — todas as funções, um só responsável.",
+          "date": "2023",
+          "url": "https://www.youtube.com/watch?v=qKp-eZ8iqJc"
+        },
+        {
+          "id": "cnpj",
+          "type": "milestone",
+          "title": "CNPJ da Umimbae — Primeira Empresa",
+          "description": "24 de outubro de 2023. Aos 23 anos, abriu o CNPJ da Umimbae com firmeza. O risco foi assumido conscientemente. A produtora deixou de ser projeto e virou empresa.",
+          "date": "24/10/2023"
+        }
+      ]
+    },
+    {
+      "id": "marentropico",
+      "label": "Marentropico",
+      "period": "2024 – 2025",
+      "color": "#6B3FA0",
+      "icon": "⚡",
+      "title": "A Identidade Artística Própria",
+      "description": "O produtor começa a assinar seus próprios trabalhos. Marentropico emerge como nome artístico. Parcerias, festivais, design de capas, visualizers 3D, IA, programação — e o primeiro trabalho autoral assinado de verdade.",
+      "milestones": [
+        {
+          "id": "sem-samba",
+          "type": "spotify",
+          "title": "'Sem Samba Não Tem Carnaval' — Marentropico",
+          "description": "Dezembro de 2024. Primeiro trabalho lançado assinando de fato como Marentropico — em parceria com outro artista do bairro. A identidade artística própria se concretiza em fonograma.",
+          "date": "Dezembro de 2024",
+          "url": "https://open.spotify.com/intl-pt/track/2nT6qj6L07lcW0Ef1Y4UvA?si=bcfc5c0ea924458c"
+        },
+        {
+          "id": "dthorp",
+          "type": "youtube",
+          "title": "DTHORP — Festival de Música Eletrônica",
+          "description": "As festas da escola evoluíram. A DTHORP nasceu como festival de música eletrônica — produção, lineup, palco. A visão de produtor cultural tomando forma concreta.",
+          "date": "2024",
+          "url": "https://www.youtube.com/watch?v=7wNWD81lSiA"
+        },
+        {
+          "id": "lounge-dj",
+          "type": "youtube",
+          "title": "Performance como DJ em Lounge",
+          "description": "Participações em lounges como DJ — a cena eletrônica recebendo o Wölfig nos palcos.",
+          "date": "2024",
+          "url": "https://www.youtube.com/watch?v=kJT-5GUL7-I"
+        },
+        {
+          "id": "dimensional-grove",
+          "type": "spotify",
+          "title": "Capa & Visualizer — 'Dimensional Grove' (GASI)",
+          "description": "Criou a capa e o visualizer da música de GASI. O design audiovisual como extensão da identidade do artista.",
+          "date": "2025",
+          "url": "https://open.spotify.com/intl-pt/track/73SpLWQtd8hoYwXFJs6T7t?si=e1f5570425704675"
+        },
+        {
+          "id": "rizoma",
+          "type": "spotify",
+          "title": "Modelagem 3D & Visualizer — 'Rizoma' (GUMA)",
+          "description": "Trabalhou em modelagem 3D e estrutura de nós para a capa e visualizer da música de GUMA. O motion design encontra a arte tridimensional.",
+          "date": "2025",
+          "url": "https://open.spotify.com/intl-pt/track/1OX27CR5eiWtmqV4c5Lrpf?si=a03f0f85cbae4108"
+        },
+        {
+          "id": "designer-junior",
+          "type": "text",
+          "title": "Designer Junior — Maior Empresa do Setor Infantil",
+          "description": "Em 2025, trabalhou como Designer Junior em uma das maiores empresas brasileiras do setor de produtos infantis e bebês — construindo o catálogo de e-mail marketing diariamente. O gostar de desenhar virou vaga de emprego numa grande empresa.",
+          "date": "2025"
+        },
+        {
+          "id": "site-umimbae",
+          "type": "milestone",
+          "title": "Nasce o Site da Umimbae",
+          "description": "2025. O site umimbae.com.br vai ao ar — desenvolvido do zero por ele mesmo. Produtora Audiovisual & Tech, do Grajaú para o mundo.",
+          "date": "2025"
+        },
+        {
+          "id": "curumim-jogo",
+          "type": "youtube",
+          "title": "Projeto: Curumim e o Chamado dos Ancestrais",
+          "description": "Iniciou o desenvolvimento do jogo 'Curumim e o Chamado dos Ancestrais' na Unity — aventura que explora a mitologia brasileira com trilha sonora original e reativa. A síntese de tudo: música, código e cultura.",
+          "date": "2025",
+          "url": "https://www.youtube.com/watch?v=s7MtaRaO8po"
+        },
+        {
+          "id": "site-mae",
+          "type": "text",
+          "title": "Site da Tia Bete Bolos — Para a Mãe Confeiteira",
+          "description": "Desenvolveu o site de confeitaria da mãe. Os doces que pagaram o estúdio anos atrás ganharam uma vitrine digital — feita pelo filho que eles ajudaram a criar.",
+          "date": "2025",
+          "url": "https://marentropico.github.io/tia-bete-bolos/"
+        }
+      ]
+    },
+    {
+      "id": "presente",
+      "label": "Agora",
+      "period": "2026",
+      "color": "#C4622D",
+      "icon": "🎬",
+      "title": "Marentropico, 26 Anos",
+      "description": "Trabalha 100% autônomo com a Umimbae. Produz, grava, mixa, design, programa. Complementa a renda com delivery de bicicleta pelo centro de SP — e vê nisso não uma derrota, mas um capítulo honesto de uma trajetória construída com integridade.",
+      "milestones": [
+        {
+          "id": "amor-de-quebrada",
+          "type": "spotify",
+          "title": "'Amor de Quebrada' — Marentropico feat. Dan Sílva",
+          "description": "2026. Segundo trabalho assinado como Marentropico — em parceria com Dan Sílva. Arranjou, produziu, mixou e participou da composição lírica. A voz do Grajaú em um samba que é também declaração de amor e de pertencimento.",
+          "date": "2026",
+          "url": "https://open.spotify.com/intl-pt/track/7IVVMv9WqOdSlJxwPO16Az"
+        },
+        {
+          "id": "metamorfose",
+          "type": "milestone",
+          "title": "Parceria com Metamorfose Records",
+          "description": "Parceria fechada com o estúdio Metamorfose Records para captar audiovisual de bandas e projetos artísticos. O ecossistema da Umimbae em expansão concreta.",
+          "date": "2026"
+        },
+        {
+          "id": "programacao",
+          "type": "text",
+          "title": "Mergulho em IA e Programação",
+          "description": "Aprofundamento intenso em estudos de Inteligência Artificial e início formal de um curso de programação. O próximo nível está sendo construído com intenção e método.",
+          "date": "2025 – 2026"
+        },
+        {
+          "id": "academy-umimbae",
+          "type": "text",
+          "title": "Umimbae Academy — Do Zero ao Hit",
+          "description": "O projeto educacional da Umimbae toma forma: um hub de aprendizagem para criadores dos novos mercados de arte e desenvolvimento — produção musical, TouchDesigner, desenvolvimento de jogos e mais.",
+          "date": "2026",
+          "url": "https://umimbae.com.br/academy"
+        }
+      ]
+    },
+    {
+      "id": "horizonte",
+      "label": "Horizonte",
+      "period": "Futuro",
+      "color": "#1A3A5C",
+      "icon": "🔭",
+      "title": "Do Sonho ao Ecossistema",
+      "description": "Assim como a Bonjour Records era um sonho que fez a Umimbae nascer — e gostar de desenhar abriu uma vaga de Designer numa grande empresa — o que parece distante hoje é um prenúncio claro do que está por vir.",
+      "milestones": [
+        {
+          "id": "futuro-proximo",
+          "type": "text",
+          "title": "Web Design & Engenharia de Software",
+          "description": "Expandir a área de atuação para gerar renda a partir de projetos de programação. Web Design e Engenharia de Software como pilares complementares à produção audiovisual.",
+          "date": "Próximos Anos"
+        },
+        {
+          "id": "futuro-medio",
+          "type": "text",
+          "title": "Diretor Criativo & Hub Educacional Completo",
+          "description": "Consolidar o papel de Desenvolvedor e Diretor Criativo como diferencial de destaque. Expandir a Umimbae Academy: TouchDesigner, Desenvolvimento de Jogos, Produção Musical, Assessoria Artística — da ideia ao lançamento global.",
+          "date": "Médio Prazo"
+        },
+        {
+          "id": "umimbae-label",
+          "type": "text",
+          "title": "Umimbae como Selo de Grande Porte",
+          "description": "Produção musical, mixagem, masterização, imprensa, sistema como serviço e distribuição global para artistas. A Umimbae competindo com grandes selos — não pela estrutura corporativa, mas pela qualidade e pela missão.",
+          "date": "Longo Prazo"
+        },
+        {
+          "id": "umi-streaming",
+          "type": "text",
+          "title": "UMI — A Plataforma de Streaming Justa",
+          "description": "A visão mais distante — e mais ousada. Uma plataforma própria baseada em tokenização, onde cada play representa um pagamento direto para o dono do fonograma. 'UMI' — trocadilho com 'You, Me'. A Umimbae como sócia minoritária de um ecossistema gigantesco. Música mais justa. Arte mais livre.",
+          "date": "Visão de Longo Prazo"
+        },
+        {
+          "id": "curumim-lancamento",
+          "type": "text",
+          "title": "Lançamento de Curumim — O Jogo",
+          "description": "Concluir e lançar 'Curumim e o Chamado dos Ancestrais' — o jogo que é a síntese de toda a jornada: música, código, cultura e mitologia brasileira. Feito do Grajaú para o mundo.",
+          "date": "Em Desenvolvimento"
+        }
+      ]
+    }
+  ],
+  "values": [
+    { "label": "Aprendizado Contínuo", "icon": "📚", "text": "A fome de saber nunca sacia — cada novo domínio é um novo instrumento. Do violão ao código, sempre há um próximo nível." },
+    { "label": "Raízes como Força", "icon": "🌱", "text": "Grajaú não é ponto de partida. É bússola permanente. A periferia como polo de inovação — não apesar das raízes, mas por causa delas." },
+    { "label": "Tecnologia Emancipatória", "icon": "⚙️", "text": "Código e microfone têm o mesmo peso: amplificar vozes. A tecnologia a serviço da arte — e da justiça." },
+    { "label": "Execução com Integridade", "icon": "🎯", "text": "Sonhar com precisão e construir com consistência. Vender doces pra pagar o estúdio. Fazer delivery enquanto constrói a produtora. Cada etapa é honrada." }
+  ]
+}

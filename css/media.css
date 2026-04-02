@@ -1,0 +1,294 @@
+/* ============================================
+   MEDIA & EXTRAS
+   ============================================ */
+
+/* ============ MANIFESTO SECTION ============ */
+#manifesto {
+  padding: var(--space-2xl) var(--space-lg);
+  border-top: 1px solid var(--c-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.manifesto-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.manifesto-quote {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--c-text);
+  margin-bottom: var(--space-lg);
+}
+
+.manifesto-quote em {
+  color: var(--c-terra);
+  font-style: italic;
+}
+
+.manifesto-origin {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-text-dim);
+}
+
+.manifesto-bg-text {
+  position: absolute;
+  font-family: var(--f-display);
+  font-size: 20vw;
+  font-weight: 900;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(196, 98, 45, 0.06);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 0;
+  user-select: none;
+}
+
+/* ============ FOOTER ============ */
+#footer {
+  padding: var(--space-xl) var(--space-lg);
+  border-top: 1px solid var(--c-border);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer-logo {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--c-text-muted);
+}
+
+.footer-logo span { color: var(--c-terra); }
+
+.footer-links {
+  display: flex;
+  gap: var(--space-lg);
+  list-style: none;
+}
+
+.footer-links a {
+  font-family: var(--f-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--c-terra); }
+
+.footer-credit {
+  font-family: var(--f-mono);
+  font-size: 0.65rem;
+  color: var(--c-text-dim);
+  letter-spacing: 0.05em;
+}
+
+/* ============ SCROLL REVEAL ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ============ LOADING SCREEN ============ */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: var(--c-bg);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+
+#loader.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+}
+
+.loader-name {
+  font-family: var(--f-display);
+  font-style: italic;
+  font-size: 2rem;
+  background: linear-gradient(135deg, var(--c-text) 0%, var(--c-terra) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeIn 0.5s var(--ease-out) forwards;
+}
+
+.loader-bar-track {
+  width: 200px;
+  height: 2px;
+  background: var(--c-border);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--c-verde), var(--c-terra));
+  border-radius: 1px;
+  animation: loadFill 1.2s var(--ease-out) 0.3s forwards;
+  width: 0;
+}
+
+@keyframes loadFill { to { width: 100%; } }
+
+.loader-sub {
+  font-family: var(--f-mono);
+  font-size: 0.65rem;
+  color: var(--c-text-dim);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ============ MODAL LIGHTBOX ============ */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 13, 11, 0.95);
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.lightbox.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-content {
+  max-width: 900px;
+  width: 100%;
+  transform: scale(0.95);
+  transition: transform 0.3s var(--ease-out);
+}
+
+.lightbox.open .lightbox-content { transform: scale(1); }
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  background: none;
+  border: 1px solid var(--c-border);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: var(--c-text-muted);
+  cursor: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.lightbox-close:hover { border-color: var(--c-terra); color: var(--c-terra); }
+
+/* ============ MEDIA THUMBNAILS ============ */
+.yt-thumbnail-wrapper {
+  position: relative;
+  cursor: none;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.yt-thumbnail-wrapper img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.yt-thumbnail-wrapper:hover img { transform: scale(1.04); }
+
+.yt-play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 13, 11, 0.4);
+  transition: background 0.3s;
+}
+
+.yt-play-btn:hover { background: rgba(13, 13, 11, 0.2); }
+
+.yt-play-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--c-terra);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s var(--ease-out), background 0.3s;
+}
+
+.yt-play-btn:hover .yt-play-icon {
+  transform: scale(1.1);
+  background: var(--c-ouro);
+}
+
+.yt-play-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-left: 3px;
+}
+
+/* ============ PROGRESS BAR ============ */
+.page-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--c-verde), var(--c-terra), var(--c-ouro));
+  z-index: 200;
+  transition: width 0.1s;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marentropico — Retrato Digital de Marcos Paulo Figueroa. Artista multimídia, produtor audiovisual, fundador da Umimbae.">
+  <meta name="author" content="Marcos Paulo Figueroa / Marentropico">
+  <meta property="og:title" content="Marentropico — Retrato Digital">
+  <meta property="og:description" content="Arte Ancestral. Tecnologia Digital. Do Grajaú para o mundo.">
+  <meta property="og:type" content="website">
+  <title>Marentropico — Retrato Digital</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+  <!-- ============ LOADER ============ -->
+  <div id="loader" role="status" aria-label="Carregando">
+    <div class="loader-name">Marentropico</div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-sub">Carregando retrato digital...</div>
+  </div>
+
+  <!-- ============ CURSOR ============ -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ============ PROGRESS ============ -->
+  <div class="page-progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" role="navigation" aria-label="Navegação principal">
+    <a href="#hero" class="nav-logo">Mare<span>ntropico</span>.</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#timeline">Jornada</a></li>
+      <li><a href="#manifesto">Manifesto</a></li>
+      <li><a href="https://umimbae.com.br" target="_blank" rel="noopener">Umimbae ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" aria-label="Apresentação">
+    <!-- Background elements -->
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag">Retrato Digital · Marentropico</p>
+
+      <h1 class="hero-name" id="hero-name">Marentropico</h1>
+
+      <p class="hero-subtitle" id="hero-subtitle">
+        Produtor Audiovisual · Músico · Designer · Desenvolvedor · Fundador
+      </p>
+
+      <blockquote class="hero-essence" id="hero-essence">
+        A fome incessante de aprender e evoluir.
+      </blockquote>
+
+      <div class="hero-roles" id="hero-roles" role="list" aria-label="Funções">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="hero-cta">
+        <a href="#timeline" class="btn-primary">Explorar Jornada</a>
+        <a href="#about" class="btn-ghost">Quem sou eu</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Role para explorar</span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" aria-label="Sobre">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-text">
+          <p class="section-label">Sobre</p>
+          <h2 class="reveal">
+            Artista, <em>sonhador</em><br>e executivo nato.
+          </h2>
+          <p class="about-bio reveal reveal-delay-1" id="about-bio">
+            Nascido na efervescência cultural do Grajaú, Marcos Paulo transformou curiosidade em criação.
+          </p>
+          <div class="hero-cta reveal reveal-delay-2">
+            <a href="https://umimbae.com.br/sobre" target="_blank" rel="noopener" class="btn-ghost">
+              Ver Umimbae ↗
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <!-- Values Grid -->
+          <p class="section-label reveal">Valores</p>
+          <div class="values-grid" id="values-grid">
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- Skills -->
+          <div class="skills-panel reveal" style="margin-top: 2rem;">
+            <h3>// Ferramentas</h3>
+
+            <div class="skill-group">
+              <p class="skill-group-title">Áudio & Música</p>
+              <div class="skill-bar">
+                <span class="skill-name">Ableton Live</span>
+                <div class="skill-track"><div class="skill-fill" data-pct="95"></div></div>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Teclado / Synth</span>
+                <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+                <span class="skill-pct">90%</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-title">Visual & Motion</p>
+              <div class="skill-bar">
+                <span class="skill-name">Photoshop / Design</span>
+                <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">After Effects</span>
+                <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+                <span class="skill-pct">85%</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-title">Dev & Games</p>
+              <div class="skill-bar">
+                <span class="skill-name">Web (HTML/CSS/JS)</span>
+                <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Unity 3D / C#</span>
+                <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+                <span class="skill-pct">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section id="timeline" aria-label="Linha do tempo — Jornada">
+    <div class="timeline-header container">
+      <p class="section-label reveal">Linha do Tempo</p>
+      <h2 class="reveal reveal-delay-1">
+        A Jornada<br>
+        <span style="font-style:italic; color: var(--c-terra);">completa.</span>
+      </h2>
+      <p class="reveal reveal-delay-2" style="color: var(--c-text-muted); margin-top:1rem; max-width:500px; font-size:0.9rem;">
+        Use as setas do teclado ← → ou clique nas abas para navegar entre as eras.
+        Cada marco pode conter vídeos, músicas e fotos da trajetória.
+      </p>
+    </div>
+
+    <!-- Era navigation tabs -->
+    <div id="era-nav" class="era-nav" role="tablist" aria-label="Eras da jornada">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Era content stage -->
+    <div id="era-stage" class="era-stage" aria-live="polite">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- ============ MANIFESTO ============ -->
+  <section id="manifesto" aria-label="Manifesto">
+    <div class="manifesto-bg-text" aria-hidden="true">Grajaú</div>
+    <div class="manifesto-inner">
+      <p class="section-label reveal" style="text-align:center">Manifesto</p>
+      <blockquote class="manifesto-quote reveal reveal-delay-1">
+        "Mais que uma produtora, um <em>movimento cultural</em>.
+        Do beat ao código, da raiz ao código-fonte."
+      </blockquote>
+      <p class="manifesto-origin reveal reveal-delay-2">
+        Marcos Paulo Figueroa — Marentropico — Grajaú, São Paulo
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-logo">Mare<span>ntropico</span>.</div>
+      <ul class="footer-links">
+        <li><a href="https://umimbae.com.br" target="_blank" rel="noopener">Umimbae</a></li>
+        <li><a href="#timeline">Jornada</a></li>
+        <li><a href="#about">Sobre</a></li>
+      </ul>
+      <p class="footer-credit">
+        © 2026 Marcos Paulo Figueroa · Designed & Built by Marentropico
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Mídia expandida">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fechar">✕</button>
+    <div class="lightbox-content"></div>
+  </div>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!-- Ordem importa: media-embed deve carregar antes de timeline -->
+  <script src="js/main.js"></script>
+  <script src="js/media-embed.js"></script>
+  <script src="js/timeline.js"></script>
+
+</body>
+</html>
