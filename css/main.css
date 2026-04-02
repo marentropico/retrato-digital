@@ -562,4 +562,24 @@ section { position: relative; }
   .values-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .hero-cta { flex-direction: column; align-items: center; }
+  .cursor, .cursor-ring { display: none; }
+  body { cursor: auto; }
 }
+
+#hero {
+    padding: var(--space-xl) var(--space-md) var(--space-md);
+  }
+
+  .hero-name {
+    font-size: clamp(3rem, 18vw, 5rem);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-essence {
+    font-size: 0.95rem;
+  }
