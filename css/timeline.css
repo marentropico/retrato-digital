@@ -25,7 +25,6 @@
   overflow-x: auto;
   scrollbar-width: none;
   padding: 0 var(--space-lg);
-  margin-bottom: var(--space-xl);
   position: relative;
   max-width: 1200px;
   margin-left: auto;
@@ -46,17 +45,19 @@
 .era-nav::-webkit-scrollbar { display: none; }
 
 .era-tab {
-  flex: 1;
-  min-width: 100px;
+  flex: 0 0 auto;          /* não cresce nem estica — tamanho natural */
+  min-width: 80px;
+  max-width: 160px;
   background: none;
   border: none;
   border-bottom: 2px solid transparent;
-  padding: var(--space-md) var(--space-md) calc(var(--space-md) - 2px);
+  padding: var(--space-md) var(--space-sm) calc(var(--space-md) - 2px);
   cursor: none;
   text-align: left;
   transition: border-color 0.3s, background 0.3s;
   position: relative;
   z-index: 1;
+  overflow: hidden;        /* garante que nada vaza para fora do botão */
 }
 
 .era-tab:hover .era-tab-label { color: var(--c-text); }
@@ -78,45 +79,53 @@
   display: block;
   font-family: var(--f-mono);
   font-size: 0.65rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--c-text-dim);
   transition: color 0.2s;
   margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .era-tab-period {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   color: var(--c-text-dim);
   transition: color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ============ ERA CONTENT ============ */
 .era-stage {
   position: relative;
-  min-height: 600px;
+  /* altura dinâmica — sem min-height fixo que causa sobreposição */
 }
 
 .era-panel {
-  position: absolute;
-  inset: 0;
+  display: none;           /* oculto por padrão — sem ocupar espaço */
   opacity: 0;
-  pointer-events: none;
-  transform: translateX(30px);
+  transform: translateX(20px);
   transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
   padding: 0 var(--space-lg);
   max-width: 1200px;
   margin: 0 auto;
-  left: 50%;
-  transform: translateX(calc(-50% + 30px));
   width: 100%;
 }
 
+/* Era panel entrance animation */
+@keyframes panelIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
 .era-panel.active {
-  opacity: 1;
+  display: block;
+  animation: panelIn 0.45s var(--ease-out) forwards;
   pointer-events: all;
-  transform: translateX(-50%);
 }
 
 .era-panel-inner {

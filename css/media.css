@@ -10,10 +10,39 @@
   overflow: hidden;
 }
 
+/* Orb inferior — espelha o hero no final da página */
+#manifesto::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(196, 98, 45, 0.10), transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+  animation: orbFloat 14s ease-in-out infinite;
+}
+
+#manifesto::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -100px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(44, 120, 115, 0.08), transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  animation: orbFloat 18s ease-in-out infinite reverse;
+}
+
 .manifesto-inner {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .manifesto-quote {
@@ -60,6 +89,22 @@
 #footer {
   padding: var(--space-xl) var(--space-lg);
   border-top: 1px solid var(--c-border);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow residual no footer */
+#footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(ellipse, rgba(196, 98, 45, 0.06), transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
 }
 
 .footer-inner {
